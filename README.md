@@ -8,3 +8,5 @@ You'll see 2 textfields where you can choose to generate random graph(first fiel
 Also you'll see combobox where you can choose gamemode.
 When everything setted up you can play
 Good luck!
+
+Project done by a group of members at university. My main tasks were Game 1 and Game 2, plus the GUI for the menu
