@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<FlowPane fx:id="root" alignment="CENTER" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.graphapp.GameMode1Controller">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <Button fx:id="drawBtn" alignment="CENTER" mnemonicParsing="false" onAction="#drawGraph" prefHeight="70.0" prefWidth="70.0" text="Generate/Load Graph" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="save" alignment="CENTER" mnemonicParsing="false" onAction="#saveGraph" prefHeight="70.0" prefWidth="70.0" text="Save To File" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="backBtn" alignment="CENTER" mnemonicParsing="false" onAction="#toMenu" prefHeight="70.0" prefWidth="70.0" text="Back To Menu" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="calcBtn" alignment="CENTER" mnemonicParsing="false" onAction="#calculateGraph" prefHeight="70.0" prefWidth="70.0" text="Show/Hide graph properties" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+            <Label fx:id="graphProperty" prefHeight="80.0" prefWidth="100.0" wrapText="true" />
+         </children>
+         <FlowPane.margin>
+            <Insets right="20.0" />
+         </FlowPane.margin>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="539.0" prefWidth="746.0">
+         <children>
+            <Label fx:id="messageLabel">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Pane fx:id="graphArea" onMouseClicked="#graphTouched" prefHeight="470.0" prefWidth="710.0" style="-fx-border-color: #de8b85; -fx-border-width: 5;" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <FlowPane.margin>
+            <Insets left="20.0" />
+         </FlowPane.margin>
+         <children>
+            <Button fx:id="hintBtn" alignment="CENTER" mnemonicParsing="false" onAction="#hint" prefHeight="70.0" prefWidth="70.0" text="Hint" />
+            <ColorPicker fx:id="colorPicker" onAction="#updateColor">
+               <value>
+                  <Color red="1.0" />
+               </value>
+            </ColorPicker>
+            <Label fx:id="timerLabel" />
+            <Label fx:id="scoreLabel" text="Score: ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>
