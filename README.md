@@ -9,4 +9,4 @@ Also you'll see combobox where you can choose gamemode.
 When everything setted up you can play
 Good luck!
 
-Project done by a group of students at university. My main tasks were Game 1 and Game 2, plus the GUI for the menu
+
