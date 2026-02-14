@@ -1,4 +1,4 @@
-# Graph-Coloring
+# Graph Colouring
 To run the application javafx project should be setted up (IntelliJ recommended). 
 
 To start run the App.java file
