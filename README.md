@@ -1,67 +1,48 @@
 # Graph Colouring
-> A software project that explores the Graph Colouring problem, combining algorithms and cognitive experiments to calculate chromatic numbers and study human problem-solving.
 
-## Table of Contents
-
-- [About](#about)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Demo / Screenshots](#demo--screenshots)
-- [Technologies & Skills](#technologies--skills)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
-- [Contact](#contact)
-
----
-
-## About
-
-The Graph Colouring Project addresses the classic NP-hard problem of colouring the vertices of a graph such that no two adjacent vertices share the same colour.  
-
-The objectives of the project are:
-
-- Efficiently calculate the chromatic number of various graph types using multiple algorithms.
-- Explore the impact of different restrictions on human performance in solving graph colouring tasks.
-- Develop a visual interface to interactively test and visualise graph colouring.
-
-This project was implemented as part of a first-year group assignment at Maastricht University (PBL system) using Java and JavaFX.
-
----
+## Overview
+The Graph Colouring Project implements algorithms to assign colours to vertices of a graph such that no two adjacent vertices share the same colour. The main objective is to calculate the **chromatic number** of a graph efficiently while supporting various graph structures, from simple to complex.
 
 ## Features
+- Calculation of the chromatic number using:
+  - **Backtracking Algorithm**
+  - **Greedy Algorithm**
+  - **Bron-Kerbosch Algorithm** (with Tomita Pivoting)
+  - **Depth-First Search** and **Heapsort** optimizations
+- Supports recognition of special graph types:
+  - Bipartite graphs
+  - Cycle graphs
+  - Complete graphs
+- GUI visualization of graphs using **JavaFX**
+- Modular and extendable Java code structure
 
-- Calculation of chromatic numbers for undirected graphs.
-- Detection of special graph types (bipartite, cycle, complete) for optimized computation.
-- Integration of multiple algorithms:
-  - Backtracking
-  - Brook’s Theorem
-  - Greedy Algorithm
-  - Bron-Kerbosch + Tomita Pivoting for cliques
-  - Depth-First Search (DFS)
-  - HeapSort for degree prioritization
-- Three interactive game modes to test human graph colouring efficiency:
-  1. No restrictions
-  2. Timed restrictions
-  3. Set route restrictions
+## Technologies
+- **Java 11+**
+- **JavaFX** for interactive graph visualization
+- Core algorithms implemented manually for learning and optimization
 
----
-
-## Installation
-
+## Getting Started
 1. Clone the repository:
-
 ```bash
-git clone <repo_url>
-cd graph-colouring
-To run the application javafx project should be setted up (IntelliJ recommended). 
+git clone https://github.com/yourusername/graph-colouring.git
+```
+2. Open the project in **IntelliJ IDEA** or any Java IDE.
+3. Run `App.java`.
+4. You'll see two text fields:
+   - **Generate Random Graph** – specify an upper bound for the number of vertices.
+   - **Upload Existing Graph** – the upper bound will be set automatically based on the chosen graph.
+5. Choose a **game mode** from the combo box:
+   - No restrictions
+   - Timed restrictions
+   - Set route restrictions
+6. Click **play** and interact with the graph visualization.
 
-To start run the App.java file
+## Structure
+- ReadGraph.java – Reads graph input and initiates calculations.
+- GraphCalculator.java – Handles chromatic number computation, graph properties, and algorithm selection.
+- HeapSort.java – Used for sorting vertex degrees.
+- Algorithms/ – Contains implemented algorithms (Backtracking, Greedy, Bron-Kerbosch, DFS, etc.)
+- GUI/ – JavaFX classes for graph visualization and optional game modes.
 
-You'll see 2 textfields where you can choose to generate random graph(first field), for that you need to specify upperbound of your graph,
- or upload existing one(second field)(upperbound will be automaticcaly set equal to the amount of vertices of chosen graph)
-Also you'll see combobox where you can choose gamemode.
-When everything setted up you can play
-Good luck!
 
 
