@@ -12,7 +12,7 @@ Graph colouring is more than a theoretical exercise; it is a fundamental tool fo
 The Graph Colouring Project implements algorithms to assign colours to vertices of a graph such that no two adjacent vertices share the same colour. The main objective is to calculate the **chromatic number** of a graph efficiently while supporting various graph structures, from simple to complex.
 
 ## Demo
-[ADD PICTURES]
+
 
 ## Features
 - Calculation of the chromatic number using:
