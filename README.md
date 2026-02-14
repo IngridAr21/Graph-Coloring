@@ -11,6 +11,9 @@ Graph colouring is more than a theoretical exercise; it is a fundamental tool fo
 ## Overview
 The Graph Colouring Project implements algorithms to assign colours to vertices of a graph such that no two adjacent vertices share the same colour. The main objective is to calculate the **chromatic number** of a graph efficiently while supporting various graph structures, from simple to complex.
 
+## Demo
+[ADD PICTURES]
+
 ## Features
 - Calculation of the chromatic number using:
   - **Backtracking Algorithm**
@@ -45,12 +48,6 @@ git clone https://github.com/yourusername/graph-colouring.git
    - Set route restrictions
 6. Click **play** and interact with the graph visualization.
 
-## Structure
-- ReadGraph.java – Reads graph input and initiates calculations.
-- GraphCalculator.java – Handles chromatic number computation, graph properties, and algorithm selection.
-- HeapSort.java – Used for sorting vertex degrees.
-- Algorithms/ – Contains implemented algorithms (Backtracking, Greedy, Bron-Kerbosch, DFS, etc.)
-- GUI/ – JavaFX classes for graph visualization and optional game modes.
 
 
 
